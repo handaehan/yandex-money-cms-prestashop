@@ -17,7 +17,7 @@ class yamodulepayment_kassaModuleFrontController extends ModuleFrontController
 		$this->log_on = Configuration::get('YA_ORG_LOGGING_ON');
 		if($this->log_on)
 			$this->module->log_save('payment_kassa '.$dd);
-		Tools::getValue('label') ? $data = explode('_', Tools::getValue('label')) : $data = explode('_', Tools::getValue('customerNumber'));
+		$data = explode('_', Tools::getValue('customerNumber'));
 		if(!empty($data) && $data[0] == 'KASSA')
 		{
 			$cart = new Cart($data[1]);

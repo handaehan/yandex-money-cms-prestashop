@@ -8,7 +8,7 @@ class yamodulesuccessModuleFrontController extends ModuleFrontController
     {
         parent::initContent();
 		$log_on = Configuration::get('YA_ORG_LOGGING_ON');
-        Tools::getValue('label') ? $data = explode('_', Tools::getValue('label')) : $data = explode('_', Tools::getValue('customerNumber'));
+      $data = explode('_', Tools::getValue(!empty(Tools::getValue('label'))?'label':'customerNumber'));
 		if(!empty($data) && isset($data[1]))
 		{
 			$ordernumber = $data['1'];
