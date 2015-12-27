@@ -1,0 +1,109 @@
+/**
+* Module is prohibited to sales! Violation of this condition leads to the deprivation of the license!
+*
+* @category  Front Office Features
+* @package   Yandex Payment Solution
+* @author    Yandex.Money <cms@yamoney.ru>
+* @copyright © 2015 NBCO Yandex.Money LLC
+* @license   https://money.yandex.ru/doc.xml?id=527052
+*/
+
+p.payment_module a.yandex_money_card {
+	background: url(../img/ac.png) 23px 30px no-repeat #fbfbfb;
+}
+p.payment_module a.yandex_money_wallet {
+	background: url(../img/pc.png) 23px 30px no-repeat #fbfbfb;
+}
+
+p.payment_module a.ym_AC {
+	background: url(../img/ac.png) 23px 30px no-repeat #fbfbfb;
+}
+
+p.payment_module a.ym_WM {
+	background: url(../img/wm.png) 23px 30px no-repeat #fbfbfb;
+}
+
+p.payment_module a.ym_GP {
+	background: url(../img/gp.png) 23px 30px no-repeat #fbfbfb;
+}
+
+p.payment_module a.ym_PC {
+	background: url(../img/pc.png) 23px 30px no-repeat #fbfbfb;
+}
+
+p.payment_module a.ym_MC {
+	background: url(../img/mc.png) 23px 30px no-repeat #fbfbfb;
+}
+
+p.payment_module a.ym_AB {
+	background: url(../img/ab.png) 23px 30px no-repeat #fbfbfb;
+}
+
+p.payment_module a.ym_SB {
+	background: url(../img/sb.png) 23px 30px no-repeat #fbfbfb;
+}
+
+p.payment_module a.ym_PB {
+	background: url(../img/pb.png) 23px 30px no-repeat #fbfbfb;
+}
+
+p.payment_module a.ym_MA {
+	background: url(../img/ma.png) 23px 30px no-repeat #fbfbfb;
+}
+
+p.payment_module a.ym_QW {
+	background: url(../img/qw.png) 23px 30px no-repeat #fbfbfb;
+}
+
+p.payment_module a.ym_QP {
+	background: url(../img/qp.png) 23px 30px no-repeat #fbfbfb;
+}
+
+p.payment_module a.yandex_money_wallet:hover,
+p.payment_module a.yandex_money_card:hover,
+p.payment_module a.ym_AC:hover,
+p.payment_module a.ym_WM:hover,
+p.payment_module a.ym_PB:hover,
+p.payment_module a.ym_MA:hover,
+p.payment_module a.ym_GP:hover,
+p.payment_module a.ym_PC:hover,
+p.payment_module a.ym_AB:hover,
+p.payment_module a.ym_SB:hover,
+p.payment_module a.ym_QW:hover,
+p.payment_module a.ym_QP:hover,
+p.payment_module a.ym_MC:hover{
+	background-color: #f6f6f6;
+}
+
+p.payment_module a {
+	-webkit-transition-duration: 0.5s; 
+	-o-transition-duration: 0.5s; 
+	-moz-transition-duration: 0.5s; 
+	transition-duration: 0.5s;
+}
+
+p.payment_module a.yandex_money_card:after,
+p.payment_module a.yandex_money_wallet:after,
+p.payment_module a.ym_AC:after,
+p.payment_module a.ym_QW:after,
+p.payment_module a.ym_QP:after,
+p.payment_module a.ym_WM:after,
+p.payment_module a.ym_PB:after,
+p.payment_module a.ym_MA:after,
+p.payment_module a.ym_GP:after,
+p.payment_module a.ym_AB:after,
+p.payment_module a.ym_SB:after,
+p.payment_module a.ym_PC:after,
+p.payment_module a.ym_MC:after{
+	display: block;
+	content: "\f054";
+	position: absolute;
+	right: 15px;
+	margin-top: -11px;
+	top: 50%;
+	font-family: "FontAwesome";
+	font-size: 25px;
+	height: 22px;
+	width: 14px;
+	color: #777777;
+}
