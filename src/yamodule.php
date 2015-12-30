@@ -96,7 +96,7 @@ class Yamodule extends PaymentModule
 
         $this->name = 'yamodule';
         $this->tab = 'payments_gateways';
-        $this->version = '1.3.0';
+        $this->version = '1.3.1';
         $this->author = 'Яндекс.Деньги';
         $this->need_instance = 1;
         $this->bootstrap = 1;
@@ -1490,7 +1490,7 @@ class Yamodule extends PaymentModule
         Configuration::UpdateValue('YA_ORG_ACTIVE', Tools::getValue('YA_ORG_ACTIVE'));
         Configuration::UpdateValue('YA_ORG_INSIDE', Tools::getValue('YA_ORG_INSIDE'));
 
-        if (Tools::getValue('YA_ORG_ACTIVE') && empty(Configuration::get('yamodule_mws_csr_sign'))) {
+        if (Tools::getValue('YA_ORG_ACTIVE') && Configuration::get('yamodule_mws_csr_sign')) {
             Mws::generateCsr();
         }
 
